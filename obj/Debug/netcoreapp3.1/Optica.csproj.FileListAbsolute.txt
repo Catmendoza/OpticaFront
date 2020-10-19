@@ -69,3 +69,4 @@ C:\Users\catic\Documents\Proyectos\Programación.net\parcial2\Optica\bin\Debug\n
 C:\Users\catic\Documents\Proyectos\Programación.net\parcial2\Optica\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\catic\Documents\Proyectos\Programación.net\parcial2\Optica\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\catic\Documents\Proyectos\Programación.net\parcial2\Optica\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\catic\Documents\Proyectos\Programación.net\parcial2\Optica\bin\Debug\netcoreapp3.1\package-lock.json

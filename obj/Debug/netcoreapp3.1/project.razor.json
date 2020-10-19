@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 471393786,
+        "Kind": "Components.Component",
+        "Name": "Optica.App",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.App"
+        }
+      },
+      {
+        "HashCode": -1638825023,
+        "Kind": "Components.Component",
+        "Name": "Optica.App",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Optica.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 652897450,
         "Kind": "Components.Component",
         "Name": "Optica.Pages.Counter",
@@ -131,92 +164,6 @@
         }
       },
       {
-        "HashCode": 2091792718,
-        "Kind": "Components.Component",
-        "Name": "Optica.Shared.NavMenu",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 1206314182,
-        "Kind": "Components.Component",
-        "Name": "Optica.Shared.NavMenu",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Optica.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 116188405,
-        "Kind": "Components.Component",
-        "Name": "Optica.Shared.SurveyPrompt",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -489532465,
-        "Kind": "Components.Component",
-        "Name": "Optica.Shared.SurveyPrompt",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Optica.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -2117995645,
         "Kind": "Components.Component",
         "Name": "Optica.Shared.MainLayout",
@@ -313,35 +260,88 @@
         }
       },
       {
-        "HashCode": 471393786,
+        "HashCode": 2091792718,
         "Kind": "Components.Component",
-        "Name": "Optica.App",
+        "Name": "Optica.Shared.NavMenu",
         "AssemblyName": "Optica",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.App"
+          "Common.TypeName": "Optica.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -1638825023,
+        "HashCode": 1206314182,
         "Kind": "Components.Component",
-        "Name": "Optica.App",
+        "Name": "Optica.Shared.NavMenu",
         "AssemblyName": "Optica",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Optica.App"
+            "TagName": "Optica.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.App",
+          "Common.TypeName": "Optica.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 116188405,
+        "Kind": "Components.Component",
+        "Name": "Optica.Shared.SurveyPrompt",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -489532465,
+        "Kind": "Components.Component",
+        "Name": "Optica.Shared.SurveyPrompt",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Optica.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
