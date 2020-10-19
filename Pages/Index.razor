@@ -1,0 +1,45 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+<img src="/img/logo.png" asp-append-version="true" width="300px" />
+
+<div>
+    <div style="background-color: #F9C953;">
+        <span>Iniciar sesión</span>
+    </div>
+    <div>
+        <Field>
+            <FieldLabel>Correo</FieldLabel>
+            <input type="text" @bind="_correo" />
+        </Field>
+        <Field>
+            <FieldLabel>Contraseña</FieldLabel>
+            <input type="password" @bind="_contrasenia" />
+        </Field>
+    </div>
+    <div>
+        <Button Color="Color.Primary" @onclick="ingreso">Ingresar</Button>
+    </div>
+    @_error
+</div>
+
+@code{
+    private string _correo;
+    private string _contrasenia;
+    private string _error = "";
+
+    private async void ingreso()
+    {
+        var respuesta = await Http.GetStringAsync("http://localhost:5000/api/usuarios/" + _correo + "/" + _contrasenia);
+
+        if (respuesta != "error")
+        {
+            NavigationManager.NavigateTo($"inicio/{respuesta}");
+        }
+        else
+        {
+            _error = "No existe...";
+        }
+    }
+}

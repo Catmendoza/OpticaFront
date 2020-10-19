@@ -1,0 +1,80 @@
+﻿@page "/inicio/{correo}"
+@inject HttpClient Http
+
+<img src="/img/logo.png" asp-append-version="true" width="300px" />
+
+Bienvenido @correo a la optica Cat, encontraras marcos para tu gafas a tu gusto y un buen precio en tus lentes.
+
+@if (_usuarios != null)
+{
+    <div class=" row px-4" style="background-color: #F9C953; height: 30px;" />
+    <Carousel @bind-SelectedSlide="@selectedSlide">
+        <CarouselSlide Name="1">
+            <img src="/img/gafa4.jpg" Display="Display.Block" Style="width: 100%; height: 500px;" />
+        </CarouselSlide>
+        <CarouselSlide Name="2">
+            <img src="/img/gafa5.jpg" Display="Display.Block" Style="width: 100%;height: 500px;" />
+        </CarouselSlide>
+        <CarouselSlide Name="3">
+            <img src="/img/gafa6.jpg" Display="Display.Block" Style="width: 100%;height: 500px;" />
+        </CarouselSlide>
+    </Carousel>
+
+    <div class=" row px-4" style="background-color: #F9C953; height: 30px;" />
+    <div style="width: 300px; display: flex;">
+        @foreach (var item in _gafas)
+        {
+            <div style="margin: 20px;">
+                <Card>
+                    <img src="/img/gafa1.jpg" asp-append-version="true" width="300px" />
+
+                    <CardBody>
+                        <CardTitle Size="5">@item["filtro"]</CardTitle>
+                        <CardText size="3">
+                            <p> Material: @item["material"]</p>
+                            <p> Marco: @item["marco"]</p>
+                            <p>Precio: @item["precio"]</p>
+                        </CardText>
+                        <Button Color="Color.Primary" @onclick="@(() => comprar(item["id"].ToString()))">Comprar PSE</Button>
+                        <Button Color="Color.Primary" @onclick="@(() => comprarCredito(item["id"].ToString()))">Comprar
+                            TC</Button>
+                    </CardBody>
+                </Card>
+            </div>
+        }
+    </div>
+}
+
+@functions {
+    private Newtonsoft.Json.Linq.JArray _usuarios;
+    private Newtonsoft.Json.Linq.JArray _gafas;
+
+    protected override async Task OnInitializedAsync() { await getUsuario(); await getGafas(); }
+
+    private async Task getUsuario() => _usuarios = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(await
+        Http.GetStringAsync("http://localhost:5000/api/usuarios/"));
+
+    private async Task getGafas() => _gafas = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(await
+        Http.GetStringAsync("http://localhost:5000/api/gafas/"));
+}
+
+@code{
+    [Parameter]
+    public string correo { get; set; }
+    private string selectedSlide = "2";
+
+    protected override void OnParametersSet()
+    {
+        this.correo = correo;
+    }
+
+    public async void comprar(string id)
+    {
+        var res = await Http.GetStringAsync("http://localhost:5000/api/compra/" + id + "/" + correo + "/PSE");
+    }
+
+    public async void comprarCredito(string id)
+    {
+        var res = await Http.GetStringAsync("http://localhost:5000/api/compra/" + id + "/" + correo + "/TC");
+    }
+}

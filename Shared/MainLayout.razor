@@ -1,0 +1,13 @@
+@using System.ComponentModel
+@inherits LayoutComponentBase
+@inject HttpClient Http
+
+
+<div class="main">
+    <div class=" row px-4" style="background-color: #F9C953; height: 30px;">
+        <a href="https://docs.microsoft.com/aspnet/" target="_blank" style="color: #fff;">About</a>
+    </div>
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
