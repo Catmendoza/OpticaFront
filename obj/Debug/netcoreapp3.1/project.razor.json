@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": 916803146,
-        "Kind": "Components.Component",
-        "Name": "Optica.Pages.Index",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 454403625,
-        "Kind": "Components.Component",
-        "Name": "Optica.Pages.Index",
-        "AssemblyName": "Optica",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Optica.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Optica.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -139176745,
         "Kind": "Components.Component",
         "Name": "Optica.Pages.FetchData",
@@ -127,6 +94,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Optica.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 916803146,
+        "Kind": "Components.Component",
+        "Name": "Optica.Pages.Index",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 454403625,
+        "Kind": "Components.Component",
+        "Name": "Optica.Pages.Index",
+        "AssemblyName": "Optica",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Optica.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Optica.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

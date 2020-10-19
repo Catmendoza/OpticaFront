@@ -2,28 +2,31 @@
 @inject NavigationManager NavigationManager
 @inject HttpClient Http
 
-<img src="/img/logo.png" asp-append-version="true" width="300px" />
+<div style="display: flex; ">
+    <div style="flex-grow: 4; margin-top:50px">
+        <div style="margin-left: 45%;margin-bottom: 20px;">
+            <h2>Iniciar sesión</h2>
+        </div>
+        <div style="margin-left: 30%">
+            <Field>
+                <FieldLabel>Correo</FieldLabel>
+                <input style="width: 300px;" type="text" @bind="_correo" />
+            </Field>
+            <Field>
+                <FieldLabel>Contraseña</FieldLabel>
+                <input style="width: 270px;" type="password" @bind="_contrasenia" />
+            </Field>
+        </div>
+        <div style="margin-left: 30%;">
+            <Button Color="Color.Primary" @onclick="ingreso">Ingresar</Button>
+        </div>
+        @_error
+    </div>
 
-<div>
-    <div style="background-color: #F9C953;">
-        <span>Iniciar sesión</span>
+    <div style="flex-grow: 4; margin-left: 20%;margin-top:50px">
+        <img src="/img/logo.png" asp-append-version="true" width="300px" />
     </div>
-    <div>
-        <Field>
-            <FieldLabel>Correo</FieldLabel>
-            <input type="text" @bind="_correo" />
-        </Field>
-        <Field>
-            <FieldLabel>Contraseña</FieldLabel>
-            <input type="password" @bind="_contrasenia" />
-        </Field>
-    </div>
-    <div>
-        <Button Color="Color.Primary" @onclick="ingreso">Ingresar</Button>
-    </div>
-    @_error
 </div>
-
 @code{
     private string _correo;
     private string _contrasenia;

@@ -21,10 +21,10 @@ Bienvenido @correo a la optica Cat, encontraras marcos para tu gafas a tu gusto 
     </Carousel>
 
     <div class=" row px-4" style="background-color: #F9C953; height: 30px;" />
-    <div style="width: 300px; display: flex;">
+    <div style=" width: 100%; display: flex; flex-wrap: wrap; margin-left: 10%; ">
         @foreach (var item in _gafas)
         {
-            <div style="margin: 20px;">
+            <div style="margin: 20px; width: 300px;">
                 <Card>
                     <img src="/img/gafa1.jpg" asp-append-version="true" width="300px" />
 
